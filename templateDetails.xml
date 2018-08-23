@@ -11,8 +11,13 @@
 	<files>
 		<filename>index.php</filename>
 		<filename>templateDetails.xml</filename>
-		<folder>assets</folder>
-		<folder>bootstrap</folder>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>images</folder>
+		
 	</files>
 	 <positions>
 		<position>header</position>
