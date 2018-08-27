@@ -11,8 +11,6 @@ $doc = JFactory::getDocument();
 
 
 
-$doc->addStyleSheet($this->baseurl . '/templates/agmaTheme/css/bootstrap.min.css');
-$doc->addStyleSheet($this->baseurl . '/templates/agmaTheme/css/style.css');
 
 
 
@@ -58,10 +56,10 @@ JHtml::_('stylesheet', 'template.css', array('version' => 'auto', 'relative' => 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link type="text/css" rel="stylesheet" href="<?php echo JUri::getInstance(); ?>templates/agmaTheme/css/bootstrap.min.css" >
-        <link type="text/css" rel="stylesheet" href="<?php echo JUri::getInstance(); ?>templates/agmaTheme/css/icon/font/css/open-iconic-bootstrap.min.css" >
-        <link  rel="stylesheet" media="screen"  href="<?php echo JUri::getInstance(); ?>templates/agmaTheme/css/superfish.css" >
-        <link type="text/css" rel="stylesheet" href="<?php echo JUri::getInstance(); ?>templates/agmaTheme/css/style.css" >
+        <link type="text/css" rel="stylesheet" href="templates/agmaTheme/css/bootstrap.min.css" >
+        <link type="text/css" rel="stylesheet" href="templates/agmaTheme/css/icon/font/css/open-iconic-bootstrap.min.css" >
+        <link  rel="stylesheet" media="screen"  href="templates/agmaTheme/css/superfish.css" >
+        <link type="text/css" rel="stylesheet" href="templates/agmaTheme/css/style.css" >
 
 
     </head>
@@ -71,7 +69,7 @@ JHtml::_('stylesheet', 'template.css', array('version' => 'auto', 'relative' => 
         <header class="container shadow p-3 mb-2 bg-white rounded mt-3 " role="banner">
                 <div class="row">   
                         <div class="col"> 
-                            <img src="<?php echo JUri::getInstance(); ?>templates/agmaTheme/images/logo_lahlou.gif" class="img-fluid">
+                            <img src="templates/agmaTheme/images/logo_lahlou.gif" class="img-fluid">
                         </div>
                 
                         <div  class="col-auto">
@@ -82,27 +80,14 @@ JHtml::_('stylesheet', 'template.css', array('version' => 'auto', 'relative' => 
                                     
 
                             <div class="text-right mr-3 mt-1">
-                                  <img src="<?php echo JUri::getInstance(); ?>templates/agmaTheme/images/facebook.png" class="img-fluid mt-1">
-                                  <img src="<?php echo JUri::getInstance(); ?>templates/agmaTheme/images/linkedin.png" class="img-fluid mt-1">
+                                  <img src="templates/agmaTheme/images/facebook.png" class="img-fluid mt-1">
+                                  <img src="templates/agmaTheme/images/linkedin.png" class="img-fluid mt-1">
                             </div>
-                            <div class="mt-2">
-                            
-                                 <!--   <form role="search" method="get" action="#">
+                           
 
-
-                                        <div class="input-group" >
-                                          
-                                          <input type="search" class="form-control" placeholder="Rechercher" value="#" name="s" title="Rechercher" >
-                                          <div class="input-group-append">
-                                            <div class="input-group-text"><span class="oi oi-magnifying-glass"></span></div>
-                                          </div>
-                                        </div>
-                                  
-                                  
-                                  </form> -->
                                  <jdoc:include type="modules" name="search" style="html5" /> 
                
-                            </div> 
+                             
                         </div>
                      </div>
                      <div class="row mt-1">
@@ -137,22 +122,97 @@ JHtml::_('stylesheet', 'template.css', array('version' => 'auto', 'relative' => 
                      </div>   
         </header>
         
-        <div>
-            
-        </div>
+        <div class="container shadow p-2 mb-2 bg-white rounded">
+
+<div class="row">
+
+    <div class="col-md-8">
+       <!--Slide -->
+
+       <div class="row mt-1">
+            <div class="col-5">
+             
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Mot du Président</h5>
+                    <p class="card-text">Bienvenue sur le site d'AGMA , votre assureur conseil de référence !</p>
+                  <div class="text-right">
+                    <a href="#" class="btn btn-primary"> <span class="oi oi-plus"></span> Lire plus</a>
+                  </div>
+                  </div>
+                </div>
+                <div class="card mt-1">
+                      <div class="card-header">Actualités</div>
+                      <div class="card-body text-center">
+                        
+                               <!--Chihaja -->
 
 
-        <footer>
 
-        </footer>
+                      <div class="text-right mt-2">
+                           <a href="#" class="btn btn-primary"> <span class="oi oi-plus"></span> Tous les articles</a>  
+                      </div>
+                      </div>
+                      
+                </div>
+
+            </div>
+            <div class="col-7 " >
+              <ul class="nav nav-tabs">
+                  <li class="nav-item" >
+                    <a class="nav-link active" data-toggle="tab" href="#home" style="background-color:#B3DD59; color:white;font-weight:bold;width:140px;text-align:center;">Conseils en assurance</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#menu1" style="background-color:#1a97d1; color:white;font-weight:bold;width:140px;text-align:center;">L’essentiel de l’assurance</a>
+                  </li>
+                
+              </ul>
+
+                <div class="tab-content">
+                      <div class="tab-pane container active" id="home" style="background-color:#B3DD59;height:250px;">
+                        <h6>Conseils en assurance</h6>
+                        <a href="#"><span class="oi oi-caret-right" aria-hidden="true"> </span> Habitations et moyens de protection contre le feu</a>
+                          <div>
+                                Voici quelques conseils simples pour se protéger contre les incendies : Veillez à ce...
+                          </div>
+                          <a href="#"><span class="oi oi-caret-right" aria-hidden="true"> </span> Conseils et prevention sur la route des vacances</a>
+                          <div>
+                                Pour éviter les surprises de dernière minute et partir dans les meilleures...
+                          </div>
+                      </div>
+                      <div class="tab-pane container fade" id="menu1" style="background-color:#1a97d1;height:250px;">
+                        <h6>Lexique essentiel de l'assurance</h6>
+                        <a href="#" style="color:white;"><span class="oi oi-caret-right" aria-hidden="true"> </span> Lexique</a>
+                        <div>
+                        ACCESSOIRES      Somme due par le souscripteur à l'assureur en sus de la...
+                        </div>
+                        
+                      </div>
+                </div>
+              </div>
+              
+       </div>
+
+    </div>
+    <div class="col-md-4">
+               <!--Side bar -->
+
+    </div>
+    
+
+</div>
+
+</div>
+
+        <jdoc:include type="modules" name="footer" style="html5" /> 
 
 
-        <script src="<?php echo JUri::getInstance(); ?>templates/agmaTheme/js/jquery-3.3.1.min.js"></script>
-        <script src="<?php echo JUri::getInstance(); ?>templates/agmaTheme/js/popper.min.js"></script>
-        <script src="<?php echo JUri::getInstance(); ?>templates/agmaTheme/js/bootstrap.min.js"></script>
-        <script src="<?php echo JUri::getInstance(); ?>templates/agmaTheme/js/hoverIntent.js"></script>
-        <script src="<?php echo JUri::getInstance(); ?>templates/agmaTheme/js/superfish.js"></script>
-        <script src="<?php echo JUri::getInstance(); ?>templates/agmaTheme/js/supersubs.js"></script>
+        <script src="templates/agmaTheme/js/jquery-3.3.1.min.js"></script>
+        <script src="templates/agmaTheme/js/popper.min.js"></script>
+        <script src="templates/agmaTheme/js/bootstrap.min.js"></script>
+        <script src="templates/agmaTheme/js/hoverIntent.js"></script>
+        <script src="templates/agmaTheme/js/superfish.js"></script>
+        <script src="templates/agmaTheme/js/supersubs.js"></script>
         
         <script>
 

@@ -17,13 +17,16 @@
 		<folder>css</folder>
 		<folder>js</folder>
 		<folder>images</folder>
-		
+
 	</files>
 	 <positions>
-		<position>header</position>
+		<position>footer_menu</position>
 		<position>navigation</position>
-		<position>main</position>
+		<position>nav</position>
 		<position>footer</position>
+		<position>search</position>
+		<position>slider</position>
+
 	</positions>
 
 </extension>
